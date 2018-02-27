@@ -22,7 +22,7 @@
 				document.getElementById('age').value==="") {
 				alert("Please fill in all column!");
 				return;
-			} else if (! /^[a-zA-Z]+$/.test(document.getElementById('name').value)) {
+			} else if (! /^[a-zA-Z\s]+$/.test(document.getElementById('name').value)) {
 				alert("Name should be only english letters!");
 				return;
 			} else if (!(Number.isInteger(parseInt(document.getElementById('age').value)))) {
